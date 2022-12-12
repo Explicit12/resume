@@ -1,0 +1,9 @@
+{
+  "extends": ["airbnb-base", "prettier"],
+  "env": { "browser": true, "ecmaVersion": 13 },
+  "rules": {
+    "import/extensions": 0,
+    "quotes": ["error", "double"],
+    "no-param-reassign": "off"
+  }
+}

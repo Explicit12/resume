@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto/Roboto-Regular.ttf")
+      format("ttf supports variations"),
+    url("../fonts/Roboto/Roboto-Regular.ttf")
+      format("ttf supports variations"),
+    url("../fonts/Roboto/Roboto-Regular.woff")
+      format("woff supports variations"),
+    url("../fonts/Roboto/Roboto-Regular.woff")
+      format("woff supports variations"),
+    url("../fonts/Roboto/Roboto-Regular.woff2")
+      format("woff2 supports variations"),
+    url("../fonts/Roboto/Roboto-Regular.woff2") format("woff2-variations");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("@/assets/fonts/Space-Grotesk/SpaceGrotesk-VariableFont_wght.ttf")
+      format("ttf supports variations"),
+    url("@/assets/fonts/Space-Grotesk/SpaceGrotesk-VariableFont_wght.ttf")
+      format("ttf supports variations"),
+    url("@/assets/fonts/Space-Grotesk/SpaceGrotesk-VariableFont_wght.woff")
+      format("woff supports variations"),
+    url("@/assets/fonts/Space-Grotesk/SpaceGrotesk-VariableFont_wght.woff")
+      format("woff supports variations"),
+    url("@/assets/fonts/Space-Grotesk/SpaceGrotesk-VariableFont_wght.woff2")
+      format("woff2 supports variations"),
+    url("@/assets/fonts/Space-Grotesk/SpaceGrotesk-VariableFont_wght.woff2") format("woff2-variations");
+  font-weight: 400 500 600;
+  font-display: swap;
+}
