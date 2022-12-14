@@ -1,0 +1,9 @@
+.hero {
+  display: flex;
+}
+
+.hero__content, .hero__scene {
+  flex: 1;
+  height: 100vh;
+  max-height: 900px;
+}
