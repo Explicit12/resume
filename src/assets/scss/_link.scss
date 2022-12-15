@@ -1,0 +1,40 @@
+@import "./fonts";
+
+.link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+
+.link__second-slash {
+  transition: transform 250ms;
+}
+
+.link:hover .link__second-slash {
+  transform: translateX(-100%);
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+.link:hover::before {
+  content: "";
+  height: 50%;
+  z-index: -1;
+  position: absolute;
+  background-color: #00b5ca;
+  transform: translateY(100%);
+  animation: link-underline 250ms linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes link-underline {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}

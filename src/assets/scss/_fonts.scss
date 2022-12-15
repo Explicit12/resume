@@ -31,3 +31,20 @@
   font-weight: 400 500 600;
   font-display: swap;
 }
+
+.h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: clamp(4rem, 20vw - 1rem, 17.5rem);
+  color: white;
+  line-height: 1;
+  margin-left: -1.5%;
+}
+
+
+.h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+  font-size: clamp(1.5rem, 4vw + 1rem, 4rem);
+  color: white;
+}

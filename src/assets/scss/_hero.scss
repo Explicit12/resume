@@ -1,9 +1,42 @@
 .hero {
-  display: flex;
-}
-
-.hero__content, .hero__scene {
-  flex: 1;
+  position: relative;
   height: 100vh;
   max-height: 900px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero__wrapper,
+.hero__content,
+.hero__scene {
+  height: 100%;
+}
+
+.hero__content {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero__scene {
+  position: absolute;
+  left: -16px;
+  right: 0px;
+  z-index: -1;
+  bottom: 0px;
+  width: 100vw
+}
+
+@media only screen and (min-width: 640px) {
+  .hero__scene {
+    top: 0px;
+    left: auto;
+    width: auto;
+  }
 }
