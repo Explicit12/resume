@@ -66,9 +66,7 @@ export default class ThreeScene {
   }
 
   requestAnimation() {
-    function render(time) {
-      time *= 0.001;
-
+    function render() {
       if (this.#resizeRendererToDisplaySize(this.renderer)) {
         this.#resizeCameraAspect();
       }
