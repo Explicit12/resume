@@ -1,10 +1,10 @@
 import "normalize.css";
 import "./assets/style.scss";
 
-import addMainScreenCharacter from "./utils/addMainScreenCharacter";
+import HeroCharacter from "./utils/HeroCharacter";
 import HeroBackground from "./utils/HeroBackground";
 
 window.addEventListener("load", () => {
-  addMainScreenCharacter();
   HeroBackground.init();
+  HeroCharacter.init();
 });
