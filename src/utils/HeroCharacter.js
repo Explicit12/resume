@@ -9,7 +9,7 @@ export default class HeroCharacter {
   static #characterModel;
   static async init() {
     this.#characterModel = await loadModel(
-      "src/assets/models/6395b3403747d77532695963.glb",
+      "/models/6395b3403747d77532695963.glb",
     );
 
     this.#setPosition();
@@ -63,7 +63,7 @@ export default class HeroCharacter {
     this.#scene.mixer = new AnimationMixer(
       this.#characterModel.scene.children[0],
     );
-    const animation = await loadModel("src/assets/models/MaleIdle.glb");
+    const animation = await loadModel("/models/MaleIdle.glb");
     animation.animations[0].tracks.splice(3, 3);
     animation.animations[0].tracks.splice(9, 3);
     const idle = this.#scene.mixer.clipAction(animation.animations[0]);
