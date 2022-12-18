@@ -10,15 +10,18 @@
     <main class="container">
       <section class="hero">
         <header class="header">
-          <span class="fork-bomb" title="Do NOT write in your shell!">:(){:|:&};: </span>
+          <span class="fork-bomb" title="Do NOT write in your shell!"
+            >:(){:|:&};:
+          </span>
 
           <nav class="nav">
             <ul class="nav__list">
-              <li class="link"><a href="#">
-                /<span class="link__second-slash">/</span>
-                About me
-              </a>
-            </li>
+              <li class="link">
+                <a href="#">
+                  /<span class="link__second-slash">/</span>
+                  About me
+                </a>
+              </li>
               <li class="link">
                 <a href="#">
                   /<span class="link__second-slash">/</span>
@@ -66,6 +69,110 @@
 
           <div class="hero__backgrond">
             <canvas id="hero__backgrond"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio">
+        <h2 class="h2 portfolio__h2">My projects</h2>
+        <div id="portfolio__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide portfolio__slider__slide">
+              <div class="portfolio__slider__slide_wrapper">
+                <dir class="portfolio__slider__slide__content">
+                  <h3 class="h3 portfolio__slider__slide__content__h3">
+                    utube
+                  </h3>
+                  <p class="text">
+                    It's an alternative UI for YouTube, which don't use any
+                    YouTube API, but based on invidious API. All data is stored
+                    in your browser locally, so you don't need to have a YouTube
+                    account.
+                  </p>
+                </dir>
+                <ul class="portfolio__slider__slide__links">
+                  <li><a href="#" class="link">// Demo</a></li>
+                  <li><a href="#" class="link">// Source Code</a></li>
+                </ul>
+              </div>
+              <img
+                width="710"
+                height="368"
+                src="./src/assets/images/utube.png"
+                class="portfolio__slider__slide__image"
+                alt="utube screenshot"
+              />
+            </div>
+            <div class="swiper-slide portfolio__slider__slide">
+              <div class="portfolio__slider__slide_wrapper">
+                <dir class="portfolio__slider__slide__content">
+                  <h3 class="h3 portfolio__slider__slide__content__h3">
+                    yet-anoter-calculator
+                  </h3>
+                  <p class="text">
+                    Yet another calculator written with vue.js, which every
+                    respectful front end developer has to have in his portfolio!
+                    It is responsive, able to track and save history of your
+                    calculations.
+                  </p>
+                </dir>
+                <ul class="portfolio__slider__slide__links">
+                  <li><a href="#" class="link">// Demo</a></li>
+                  <li><a href="#" class="link">// Source Code</a></li>
+                </ul>
+              </div>
+              <img
+                width="710"
+                height="368"
+                src="./src/assets/images/calc.png"
+                class="portfolio__slider__slide__image"
+                alt="Calculator screenshot"
+              />
+            </div>
+            <div class="swiper-slide portfolio__slider__slide">
+              <div class="portfolio__slider__slide_wrapper">
+                <dir class="portfolio__slider__slide__content">
+                  <h3 class="h3 portfolio__slider__slide__content__h3">
+                    This perfect page.
+                  </h3>
+                  <p class="text">
+                    Just a simple landing page to tell you about me and show my
+                    works.
+                  </p>
+                </dir>
+                <ul class="portfolio__slider__slide__links">
+                  <li><a href="#" class="link">// Demo</a></li>
+                  <li><a href="#" class="link">// Source Code</a></li>
+                </ul>
+              </div>
+              <img
+                width="710"
+                height="368"
+                src="./src/assets/images/resume.jpg"
+                class="portfolio__slider__slide__image"
+                alt="Resume screenshot"
+              />
+            </div>
+          </div>
+          <div class="portfolio__slider__controls">
+            <button
+              class="portfolio__slider__controls__arrow portfolio__slider__controls__arrow_left"
+            >
+              <img
+                src="./src/assets/icons/arrow.svg"
+                class="portfolio__slider__controls__arrow__icon"
+                alt="Arrow left"
+              />
+            </button>
+            <button
+              class="portfolio__slider__controls__arrow portfolio__slider__controls__arrow_right"
+            >
+              <img
+                src="./src/assets/icons/arrow.svg"
+                class="portfolio__slider__controls__arrow__icon"
+                alt="Arrow right"
+              />
+            </button>
           </div>
         </div>
       </section>

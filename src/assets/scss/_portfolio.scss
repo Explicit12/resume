@@ -1,0 +1,115 @@
+.portfolio {
+  padding: 140px 0;
+}
+
+.portfolio__h2 {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 48px;
+}
+
+@media screen and (min-width: 640px) {
+  .portfolio__h2 {
+    padding-bottom: 84px;
+  }
+}
+
+.portfolio__slider__slide {
+  background-color: #de79a5;
+  padding: 21px 28px;
+  box-sizing: border-box;
+  border-radius: 18px;
+  height: 512px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1280px) {
+  .portfolio__slider__slide {
+    flex-direction: row;
+    gap: 24px;
+    border-radius: 18px;
+    height: 452px;
+    padding: 42px 58px;
+  }
+}
+
+.portfolio__slider__slide__content {
+  padding: 0;
+}
+
+.portfolio__slider__slide__content__h3{
+  padding-bottom: 24px;
+}
+
+.portfolio__slider__slide_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 1280px) {
+  .portfolio__slider__slide_wrapper {
+    padding: 0;
+  }
+}
+
+.portfolio__slider__slide__links {
+  margin: 0;
+  display: flex;
+  gap: 32px;
+  padding: 0;
+}
+
+.portfolio__slider__slide__image {
+  width: 100%;
+  max-width: 654px;
+  height: auto;
+  max-height: 368px;
+  border-radius: 16px;
+  object-fit: fill;
+  aspect-ratio: 16 / 9;
+}
+
+.portfolio__slider__controls {
+  padding-top: 48px;
+  display: flex;
+  gap: 32px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio__slider__controls__arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 8px;
+  border-radius: 100%;
+  background-color: #fff;
+  border: none;
+}
+
+.portfolio__slider__controls__arrow__icon {
+  width: 24px;
+  height: auto;
+}
+
+.portfolio__slider__controls__arrow:disabled {
+  opacity: 0.5;
+}
+
+.portfolio__slider__controls__arrow:disabled:hover {
+  cursor: default;
+}
+
+.portfolio__slider__controls__arrow:hover {
+  cursor: pointer;
+}
+
+.portfolio__slider__controls__arrow_left {
+  transform: rotate(180deg);
+}
