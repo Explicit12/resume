@@ -1,4 +1,4 @@
-@import "./fonts";
+@import url("./fonts.css");
 
 .link {
   font-family: "Roboto", sans-serif;

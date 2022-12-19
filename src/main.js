@@ -4,7 +4,7 @@ import PortfolioSlider from "./utils/PortfolioSlider";
 import UpButton from "./utils/UpButton";
 
 import "normalize.css";
-import "./assets/style.scss";
+import "./assets/style.css";
 
 window.addEventListener("DOMContentLoaded", () => {
   HeroBackground.init();

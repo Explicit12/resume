@@ -1,4 +1,4 @@
-@import "./fonts";
+@import url("./fonts.css");
 
 .name {
   display: block;

@@ -1,4 +1,4 @@
-@import "./fonts";
+@import url("./fonts.css");
 
 .fork-bomb {
   font-family: "Space Grotesk", sans-serif;

@@ -30,11 +30,10 @@
   right: 0px;
   z-index: -2;
   bottom: 0px;
-  width: 100vw
+  width: 100vw;
 }
 
 .hero__backgrond {
-  // border: 2px solid red;
   position: absolute;
   filter: blur(80px);
   height: 100%;
@@ -44,7 +43,6 @@
   left: -16px;
   z-index: -3;
 }
-
 
 #hero__backgrond {
   width: 100%;

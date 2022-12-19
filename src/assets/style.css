@@ -1,0 +1,17 @@
+@import url("./scss/global.css");
+@import url("./scss/container.css");
+@import url("./scss/body.css");
+@import url("./scss/three-canvas.css");
+@import url("./scss/bottom-fog.css");
+@import url("./scss/hero.css");
+@import url("./scss/name.css");
+@import url("./scss/link.css");
+@import url("./scss/nav.css");
+@import url("./scss/header.css");
+@import url("./scss/fork-bomb.css");
+@import url("./scss/socials-list.css");
+@import url("./scss/portfolio.css");
+@import url("./scss/about-me.css");
+@import url("./scss/footer.css");
+@import url("./scss/up-button.css");
+@import url("./scss/page-loader.css");
