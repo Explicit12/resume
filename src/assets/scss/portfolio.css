@@ -64,14 +64,23 @@
   padding: 0;
 }
 
-.portfolio__slider__slide__image {
+.portfolio__slider__slide__logo-container {
   width: 100%;
   max-width: 654px;
   height: auto;
   max-height: 368px;
   border-radius: 16px;
-  object-fit: fill;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   aspect-ratio: 16 / 9;
+  background-color: white;
+}
+
+.portfolio__slider__slide__logo-container__logo {
+  width: 100%;
+  max-width: 256px;
+  padding: 48px;
 }
 
 .portfolio__slider__controls {
