@@ -68,12 +68,10 @@
   width: 100%;
   max-width: 654px;
   height: auto;
-  max-height: 368px;
   border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
-  aspect-ratio: 16 / 9;
   background-color: white;
 }
 
@@ -81,6 +79,7 @@
   width: 100%;
   max-width: 256px;
   padding: 48px;
+  aspect-ratio: 16 / 9;
 }
 
 .portfolio__slider__controls {
