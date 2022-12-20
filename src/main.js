@@ -7,15 +7,14 @@ import "normalize.css";
 import "./assets/style.css";
 
 window.addEventListener("DOMContentLoaded", () => {
-  HeroBackground.init();
   HeroCharacter.init();
   PortfolioSlider.init();
   UpButton.init();
 });
 
 window.addEventListener("load", () => {
-  setTimeout(() => {
-    document.querySelector(".page-loader")?.remove();
-    document.documentElement.style.overflowY = "visible";
-  }, 5000);
+  document.querySelector(".page-loader")?.remove();
+  document.documentElement.style.overflowY = "visible";
+
+  HeroBackground.init();
 });
