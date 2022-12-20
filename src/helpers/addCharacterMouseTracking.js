@@ -2,7 +2,7 @@ import moveJoint from "./moveJoint";
 
 export default function addCharacterMouseTracking(neck, head) {
   document.addEventListener("mousemove", (event) => {
-    if (event.sourceCapabilities.firesTouchEvents) return false;
+    if (event.sourceCapabilities?.firesTouchEvents) return false;
     const { clientX, clientY } = event;
     const mousecoords = { x: clientX, y: clientY };
 
