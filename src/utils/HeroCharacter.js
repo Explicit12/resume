@@ -4,13 +4,14 @@ import addCharacterMouseTracking from "../helpers/addCharacterMouseTracking";
 import ThreeScene from "../helpers/ThreeScene";
 import loadModel from "../helpers/loadModel";
 
+import charGlb from "../assets/models/character.glb";
+import idleGLb from "../assets/models/MaleIdle.glb";
+
 export default class HeroCharacter {
   static #scene = new ThreeScene("#hero__three-canvas");
   static #characterModel;
   static async init() {
-    this.#characterModel = await loadModel(
-      "/models/6395b3403747d77532695963.glb",
-    );
+    this.#characterModel = await loadModel(charGlb);
 
     this.#setPosition();
     this.#setShadows();
@@ -63,7 +64,7 @@ export default class HeroCharacter {
     this.#scene.mixer = new AnimationMixer(
       this.#characterModel.scene.children[0],
     );
-    const animation = await loadModel("/models/MaleIdle.glb");
+    const animation = await loadModel(idleGLb);
     animation.animations[0].tracks.splice(3, 3);
     animation.animations[0].tracks.splice(9, 3);
     const idle = this.#scene.mixer.clipAction(animation.animations[0]);
