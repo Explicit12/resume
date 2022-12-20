@@ -64,3 +64,9 @@
     width: auto;
   }
 }
+
+@media screen and (min-width: 640px) and (orientation: landscape) {
+  .hero__scene {
+    height: 120%
+  }  
+}

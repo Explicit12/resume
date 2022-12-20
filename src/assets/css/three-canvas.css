@@ -5,3 +5,9 @@
   max-height: 900px;
   max-width: 774px;
 }
+
+@media screen and (min-width: 640px) and (orientation: landscape) {
+  .three-canvas {
+    height: 100%
+  }  
+}
